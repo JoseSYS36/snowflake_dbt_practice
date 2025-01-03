@@ -1,0 +1,47 @@
+version: 2
+
+seeds:
+  - name: retail_dataset 
+    description: "Retail dataset containing data collected from various retailers across the United States for the past 4 years."
+    table:
+      - name: retail_data
+        description: "Retail data including customer, product, store, and sales information."
+        columns:
+          - name: CustomerID
+            description: "Unique identifier for each customer."
+          - name: Age
+            description: "Age of the customer."
+          - name: Gender
+            description: "Gender of the customer."
+          - name: AnnualIncome
+            description: "Annual income of the customer in USD."
+          - name: SpendingScore
+            description: "Score indicating the customer's spending behavior (out of 100)."
+          - name: ProductCategory
+            description: "Category of the product purchased by the customer."
+          - name: ProductPrice
+            description: "Price of the product purchased by the customer in USD."
+          - name: PurchaseDate
+            description: "Date of the purchase."
+          - name: StoreID
+            description: "Unique identifier for the store."
+          - name: StoreLocation
+            description: "Location of the store."
+          - name: PaymentMethod
+            description: "Payment method used by the customer."
+          - name: DiscountApplied
+            description: "Indicates if a discount was applied to the purchase."
+          - name: DiscountPercent
+            description: "Percentage of discount applied."
+          - name: ProductCost
+            description: "Cost of the product to the retailer in USD."
+          - name: Profit
+            description: "Profit made by the retailer on the sale in USD."
+          - name: FootTraffic
+            description: "Number of people that visited the store on the day of the purchase."
+          - name: InventoryLevel
+            description: "Inventory level of the product at the time of the purchase."
+          - name: MarketingExpenditure
+            description: "Marketing expenditure for the product in USD."
+          - name: CompetitorPrice
+            description: "Price of the same product at a competitor's store in USD."
