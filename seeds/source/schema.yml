@@ -1,0 +1,7 @@
+version: 2
+
+sources:
+  - name: retail
+    schema: retail
+    tables:
+      - name: retail_data
