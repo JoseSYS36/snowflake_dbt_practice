@@ -2,7 +2,7 @@
 # Name your project! Project names should contain only lowercase characters
 # and underscores. A good package name should reflect your organization's
 # name or the intended use of these models
-name: 'jaffle_shop'
+name: 'retail_project'
 version: '1.0.0'
 config-version: 2
 
@@ -35,3 +35,7 @@ clean-targets:         # directories to be removed by `dbt clean`
 # continue to be built as views. These settings can be overridden in the individual model files
 # using the `{{ config(...) }}` macro.
 
+seeds:
+  retail_project:
+    +schema: retail_data
+    +quote_columns: false
