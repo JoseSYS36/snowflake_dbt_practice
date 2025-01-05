@@ -1,9 +1,6 @@
 version: 2
 
 seeds:
-  - name: retail_dataset 
-    description: "Retail dataset containing data collected from various retailers across the United States for the past 4 years."
-    table:
       - name: retail_data
         description: "Retail data including customer, product, store, and sales information."
         columns:

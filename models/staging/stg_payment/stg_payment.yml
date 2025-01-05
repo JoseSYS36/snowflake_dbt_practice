@@ -1,0 +1,8 @@
+version: 2
+
+models:
+  - name: stg_payment
+    description: "A model that lists the distinct payment methods used by customers."
+    columns:
+      - name: PaymentMethod
+        description: "Payment method used by customers, such as cash, credit card, or digital payment."

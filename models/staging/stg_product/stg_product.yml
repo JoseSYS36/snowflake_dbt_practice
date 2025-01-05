@@ -1,0 +1,8 @@
+version: 2
+
+models:
+  - name: stg_product  
+    description: "A staging model that lists distinct product categories from the retail data."
+    columns:
+      - name: ProductCategory
+        description: "Category of the product purchased by customers, such as electronics, clothing, or groceries."

@@ -1,0 +1,14 @@
+version: 2
+
+models:
+  - name: stg_customer  
+    description: "A summarized view of retail data focusing on customer demographics and income."
+    columns:
+      - name: CustomerID
+        description: "Unique identifier for each customer."
+      - name: Age
+        description: "Age of the customer."
+      - name: Gender
+        description: "Gender of the customer."
+      - name: AnnualIncome
+        description: "Annual income of the customer in USD."

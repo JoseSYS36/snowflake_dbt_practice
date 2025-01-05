@@ -1,0 +1,10 @@
+version: 2
+
+models:
+  - name: stg_store  
+    description: "A model providing details about store IDs and their corresponding locations."
+    columns:
+      - name: StoreID
+        description: "Unique identifier for each store."
+      - name: StoreLocation
+        description: "Location of the store."

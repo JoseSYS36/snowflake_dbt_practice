@@ -1,0 +1,6 @@
+sources:
+  - name: retail_data
+    schema: src  
+    database: retail
+    tables:
+      - name: retail_data
