@@ -1,0 +1,3 @@
+CustomerID,Age,Gender,AnnualIncome,SpendingScore,ProductCategory,ProductPrice,PurchaseDate,StoreID,StoreLocation,PaymentMethod,DiscountApplied,DiscountPercent,ProductCost,Profit,FootTraffic,InventoryLevel,MarketingExpenditure,CompetitorPrice
+1,58,Male,60038,41,Health & Beauty,147.43,6/11/2022,46,San Jose,Credit Card,TRUE,26,109.1,38.33,336,26,9107.9,171.55
+2,57,Male,31577,91,Health & Beauty,402.09,6/5/2023,53,Los Angeles,Mobile Payment,TRUE,1,398.07,4.02,491,32,1746.77,419.19

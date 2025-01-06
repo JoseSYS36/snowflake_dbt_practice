@@ -1,6 +1,8 @@
+version: 2
+
 sources:
-  - name: retail_data
-    schema: src  
+  - name: retail_src
+    schema: DBT_JHARRIES_SRC
     database: retail
     tables:
       - name: retail_data

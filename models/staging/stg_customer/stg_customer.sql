@@ -4,7 +4,7 @@ SELECT
     Gender,
     AnnualIncome
 FROM
-    {{ source('retail', 'retail_data') }}
+    {{ source('retail_src', 'retail_data') }}
 GROUP BY
     CustomerID,
     Age,

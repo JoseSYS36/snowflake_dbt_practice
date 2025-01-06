@@ -37,5 +37,20 @@ clean-targets:         # directories to be removed by `dbt clean`
 
 seeds:
   retail_dataset:
+    database: retail
     +schema: src
   
+models:
+  retail_dataset:
+    dimension:
+      +materialized: table
+      +schema: tgt
+    fact :
+      +materialized: table
+      +schema: tgt
+    staging :
+      database: retail
+      +schema: stg
+
+vars:
+  DBT_USER: 'Jose Selvam'

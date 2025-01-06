@@ -1,0 +1,43 @@
+version: 2
+
+snapshots:
+  - name: Dim_Customer_snapshot
+    description: "This model provides the transformed version of the slowly changing dimension (SCD) for customer data. It includes metadata on creation and updates, along with flags to indicate active records."
+    columns:
+      - name: Customer_key
+        description: "A unique key assigned to each customer."
+        tests:
+          - unique
+          - not_null
+      - name: CustomerID
+        description: "Unique identifier for each customer."
+        tests:
+          - not_null
+      - name: Age
+        description: "Age of the customer."
+        tests:
+          - not_null
+      - name: Gender
+        description: "Gender of the customer."
+        tests:
+          - not_null
+      - name: AnnualIncome
+        description: "Annual income of the customer in USD."
+        tests:
+          - not_null
+      - name: Created_by
+        description: "The user who created the record, retrieved from the DBT_USER variable."
+        tests:
+          - not_null
+      - name: Created_Date
+        description: "Timestamp when the record was created."
+        tests:
+          - not_null
+      - name: Updated_by
+        description: "The user who last updated the record, retrieved from the DBT_USER variable."
+      - name: Updated_Date
+        description: "Timestamp when the record was last updated."
+      - name: FLAG
+        description: "Indicates whether the record is currently active (T for active, F for inactive)."
+        tests:
+          - not_null

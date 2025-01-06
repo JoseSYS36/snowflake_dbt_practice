@@ -1,6 +1,6 @@
 SELECT 
     PaymentMethod
 FROM
-    RETAIL.DBT_JHARRIES_SRC.RETAIL_DATA
+    {{ source('retail_src', 'retail_data') }}
 GROUP BY
     PaymentMethod    
